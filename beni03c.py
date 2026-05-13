@@ -266,7 +266,7 @@ class CubeApp(ShowBase):
         self.gain=0.3
                
     def update(self, task):
-        dt = globalClock.getDt()
+        dt = ShowBaseGlobal.globalClock.getDt()
         if self.paused:
             return task.cont
         self._accumulator += dt
@@ -386,10 +386,7 @@ class CubeApp(ShowBase):
             self.torque_text.setText(f"Trq: [{self.torque[0]:.4f}, {self.torque[1]:.4f}, {self.torque[2]:.4f}]")
         except Exception:
             pass
-        try:
-            self.error_text.setText(f"error: {error_angle:.4f} rad ")
-        except Exception:
-            pass
+
 
 if __name__ == "__main__":
     app = CubeApp()

@@ -267,7 +267,8 @@ class CubeApp(ShowBase):
         self.gain=0.3
                
     def update(self, task):
-        dt = globalClock.getDt()
+        dt = ShowBaseGlobal.globalClock.getDt()
+        # dt = globalClock.getDt()
         if self.paused:
             return task.cont
         self._accumulator += dt
@@ -316,6 +317,7 @@ class CubeApp(ShowBase):
                             [-self.omega[1], self.omega[0], 0]]) # (3,3) Omegaの反対称行列     
         Rdot = self.R @ Omega_cross                        # (3,3) @ (3,3) -> (3,3) Rの時間微分
         self.R += Rdot * dt                               # 回転行列の更新 R
+        # print(f"Time step: {dt}")
         # Orthonormalize R to prevent numerical drift これがないと、回転行列の数値誤差が蓄積して，表示がおかしくなる
         try:
             u, s, vh = np.linalg.svd(self.R)

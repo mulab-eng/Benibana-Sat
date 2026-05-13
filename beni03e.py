@@ -268,7 +268,7 @@ class CubeApp(ShowBase):
         self.gain=0.3
                
     def update(self, task):
-        dt = globalClock.getDt()
+        dt = ShowBaseGlobal.globalClock.getDt()
         if self.paused:
             return task.cont
         self._accumulator += dt

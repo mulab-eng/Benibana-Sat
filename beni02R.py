@@ -242,7 +242,7 @@ class CubeApp(ShowBase):
         self.disp_torque = Vec3(0, 0, 0) #描画用に大きさを調整したトルクデータ
                
     def update(self, task):
-        dt = globalClock.getDt()
+        dt = ShowBaseGlobal.globalClock.getDt()
         self._accumulator += dt
         while self._accumulator >= self.deltaT:
             self._simulate_step(self.deltaT)

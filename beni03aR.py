@@ -248,7 +248,7 @@ class CubeApp(ShowBase):
         self.toruca_z=np.array([0.0, 0.0, 0.0]) # 磁気トルカ(機体座標系）
                
     def update(self, task):
-        dt = globalClock.getDt()
+        dt = ShowBaseGlobal.globalClock.getDt()
         if self.paused:
             return task.cont
         self._accumulator += dt
