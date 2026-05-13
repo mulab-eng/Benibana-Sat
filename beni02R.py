@@ -7,6 +7,7 @@ from panda3d.core import loadPrcFileData
 loadPrcFileData("", "load-display pandadx9")
 
 from direct.showbase.ShowBase import ShowBase
+from direct.showbase import ShowBaseGlobal
 from panda3d.core import LineSegs, NodePath, WindowProperties, Quat, Vec3, Mat3
 import math
 from panda3d.core import Geom, GeomNode, GeomVertexData, GeomVertexFormat, GeomVertexWriter, GeomTriangles
@@ -15,6 +16,9 @@ import numpy as np
 #window
 class Window:
     def __init__(self, title):
+        if ShowBaseGlobal.base is None:
+            raise RuntimeError("ShowBase is not initialized. Create CubeApp() before Window().")
+        base = ShowBaseGlobal.base
         self.props = WindowProperties()
         self.props.setTitle(title)
         self.props.setSize(800, 600)

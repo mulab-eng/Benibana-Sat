@@ -7,6 +7,7 @@ from panda3d.core import loadPrcFileData
 loadPrcFileData("", "load-display pandadx9")
 
 from direct.showbase.ShowBase import ShowBase
+from direct.showbase import ShowBaseGlobal
 from panda3d.core import LineSegs, NodePath, WindowProperties, Quat, Vec3, Mat3, TextNode
 from direct.gui.OnscreenText import OnscreenText
 import math
@@ -31,6 +32,9 @@ def angle_between(v1, v2):
 #window
 class Window:
     def __init__(self, title):
+        if ShowBaseGlobal.base is None:
+            raise RuntimeError("ShowBase is not initialized. Create CubeApp() before Window().")
+        base = ShowBaseGlobal.base
         self.props = WindowProperties()
         self.props.setTitle(title)
         self.props.setSize(800, 600)

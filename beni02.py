@@ -5,6 +5,7 @@ from panda3d.core import loadPrcFileData
 loadPrcFileData("", "load-display pandadx9")
 
 from direct.showbase.ShowBase import ShowBase
+from direct.showbase import ShowBaseGlobal
 from panda3d.core import LineSegs, NodePath, WindowProperties, Quat, Vec3, Mat3
 import math
 from panda3d.core import Geom, GeomNode, GeomVertexData, GeomVertexFormat, GeomVertexWriter, GeomTriangles
@@ -13,6 +14,9 @@ import numpy as np
 #window
 class Window:
     def __init__(self, title):
+        if ShowBaseGlobal.base is None:
+            raise RuntimeError("ShowBase is not initialized. Create CubeApp() before Window().")
+        base = ShowBaseGlobal.base
         self.props = WindowProperties()
         self.props.setTitle(title)
         self.props.setSize(800, 600)
@@ -280,7 +284,7 @@ class CubeApp(ShowBase):
         Jw_cross = np.cross(Jw, self.omega)     # (3,1) Jw x w
         self.alpha = self.J_inv @ (Jw_cross+self.torque)            # J^-1 * (Jw x w + tau) -> 角加速度ベクトル
         self.omega = self.omega + self.alpha * dt          # 角速度ベクトル w の更新
-        print(f"omega: {self.omega[0]:.6f}, {self.omega[1]:.6f}, {self.omega[2]:.6f}")
+        # print(f"omega: {self.omega[0]:.6f}, {self.omega[1]:.6f}, {self.omega[2]:.6f}")
         Omega_cross = np.array([[0, -self.omega[2], self.omega[1]],
                             [self.omega[2], 0, -self.omega[0]],
                             [-self.omega[1], self.omega[0], 0]]) # (3,3) Omegaの反対称行列     
