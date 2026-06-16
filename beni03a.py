@@ -2,8 +2,8 @@
 # （一定の磁気モーメントの場合）
 
 # 古いパソコンの場合，つぎの2行が必要
-from panda3d.core import loadPrcFileData
-loadPrcFileData("", "load-display pandadx9")
+# from panda3d.core import loadPrcFileData
+# loadPrcFileData("", "load-display pandadx9")
 
 from direct.showbase.ShowBase import ShowBase
 from direct.showbase import ShowBaseGlobal
