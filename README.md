@@ -10,6 +10,7 @@
         - ### <a href="磁気の勉強.md" target="_blank" rel="noopener noreferrer">磁気の勉強</a>
         - ### <a href="クォータニオン.md" target="_blank" rel="noopener noreferrer">クォータニオン</a>
     - ### 講義資料
+        - ### <a href="DX技術社会実装特論.pdf" target="_blank" rel="noopener noreferrer">DX技術社会実装特論.pdf</a>
 - ## Python によるシミュレーション
     - ### <a href="Python.md" target="_new" rel="noopener noreferrer">Pythonのライブラリインストール</a>
     - ### <a href="回転運動のシミュレーション_架空.md" target="_blank" rel="noopener noreferrer">回転運動のシミュレーション（架空のデータ）</a>
