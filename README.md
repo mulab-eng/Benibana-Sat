@@ -10,13 +10,16 @@
         - ### <a href="磁気の勉強.md" target="_blank" rel="noopener noreferrer">磁気の勉強</a>
         - ### <a href="クォータニオン.md" target="_blank" rel="noopener noreferrer">クォータニオン</a>
     - ### 講義資料
-        - ### <a href="DX技術社会実装特論.pdf" target="_blank" rel="noopener noreferrer">DX技術社会実装特論.pdf</a>
+        - ### <a href="DX技術社会実装特論.pdf" target="_blank" rel="noopener noreferrer">DX技術社会実装特論.pdf・・・オイラーの運動方程式の解説</a>
 - ## Python によるシミュレーション
     - ### <a href="Python.md" target="_new" rel="noopener noreferrer">Pythonのライブラリインストール</a>
     - ### <a href="回転運動のシミュレーション_架空.md" target="_blank" rel="noopener noreferrer">回転運動のシミュレーション（架空のデータ）</a>
   - ### <a href="回転運動のシミュレーション_実機.md" target="_blank" rel="noopener noreferrer">回転運動のシミュレーション（実機に近いデータ）</a>
 - ## C言語による制御プログラムとシミュレーション
+    - ### <a href="開発環境.md" target="_blank" rel="noopener noreferrer">開発環境（作成中）</a>
+    - ### <a href="C言語による制御プログラム.md" target="_blank" rel="noopener noreferrer">C言語による制御プログラム（作成中）</a>
 - ## めーかーずフェスタ出展用ゲーム
+    - ### <a href="めーかーずフェスタ出展用ゲーム.md" target="_blank" rel="noopener noreferrer">Pythonによるゲーム開発</a>
 
 
 
