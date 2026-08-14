@@ -16,7 +16,7 @@
     - ### <a href="回転運動のシミュレーション_架空.md" target="_blank" rel="noopener noreferrer">回転運動のシミュレーション（架空のデータ）</a>
   - ### <a href="回転運動のシミュレーション_実機.md" target="_blank" rel="noopener noreferrer">回転運動のシミュレーション（実機に近いデータ）</a>
 - ## C言語による制御プログラムとシミュレーション
-    - ### <a href="開発環境.md" target="_blank" rel="noopener noreferrer">開発環境（作成中）</a>
+    - ### <a href="C言語による3次元CGのための環境設定.pdf" target="_blank" rel="noopener noreferrer">開発環境（PDF）</a>
     - ### <a href="C言語による制御プログラム.md" target="_blank" rel="noopener noreferrer">C言語による制御プログラム（作成中）</a>
 - ## めーかーずフェスタ出展用ゲーム
     - ### <a href="めーかーずフェスタ出展用ゲーム.md" target="_blank" rel="noopener noreferrer">Pythonによるゲーム開発</a>
