@@ -1,7 +1,7 @@
 # 人工衛星の姿勢制御
 
 - ## 基礎理論
-    - ### ざっくりした解説
+    - ### 概説
         - ### <a href="座標系.md" target="_blank" rel="noopener noreferrer">座標系</a>
         - ### <a href="外積について.md" target="_blank" rel="noopener noreferrer">外積について</a>
         - ### <a href="運動方程式.md" target="_blank" rel="noopener noreferrer">運動方程式</a>
