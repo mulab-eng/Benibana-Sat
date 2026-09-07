@@ -19,7 +19,8 @@
     - ### <a href="C言語による3次元CGのための環境設定.pdf" target="_blank" rel="noopener noreferrer">開発環境（PDF）</a>
     - ### <a href="C言語によるシミュレーション.md" target="_blank" rel="noopener noreferrer">C言語による制御プログラム</a>
 - ## めーかーずフェスタ出展用ゲーム
-    - ### <a href="姿勢制御ゲーム.md" target="_blank" rel="noopener noreferrer">Pythonによるゲーム開発</a>
+    - ### https://github.com/mulab-eng/Benibana-Sat-Game <BR>
+    ゲームのソースコードは上記のGitHubにあります．
 
 
 
