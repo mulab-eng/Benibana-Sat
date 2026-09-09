@@ -11,6 +11,8 @@
         - ### <a href="クォータニオン.md" target="_blank" rel="noopener noreferrer">クォータニオン</a>
     - ### 講義資料
         - ### <a href="DX技術社会実装特論.pdf" target="_blank" rel="noopener noreferrer">DX技術社会実装特論.pdf・・・オイラーの運動方程式の解説</a>
+    - ### PDF資料
+        - ### <a href="クォータニオンと回転行列.pdf" target="_blank" rel="noopener noreferrer">クォータニオンと回転行列</a>
 - ## Python によるシミュレーション
     - ### <a href="Python.md" target="_new" rel="noopener noreferrer">Pythonのライブラリインストール</a>
     - ### <a href="回転運動のシミュレーション_架空.md" target="_blank" rel="noopener noreferrer">回転運動のシミュレーション（架空のデータ）</a>
