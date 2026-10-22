@@ -1,6 +1,3 @@
-# クォータニオンを使う
-# 磁気トルカを搭載した衛星の動き
-# （一定の磁気モーメントの場合）
 
 # 古いパソコンの場合，つぎの2行が必要
 # from panda3d.core import loadPrcFileData
@@ -358,34 +355,8 @@ class CubeApp(ShowBase):
         # rotation = Rsci.from_rotvec(np.array(axis) * theta)
         # self.R = rotation.as_matrix()
 
-        # # 角速度ベクトル描画  機体座標系の角速度を慣性座標系に変換して描画するため、Rをかける
-        # disp_omega = 0.7 * self.R @ self.omega #描画用の角速度データ
-        # omega_mag = np.linalg.norm(disp_omega)
-        # if omega_mag < 1e-8:
-        #     self.disp_omega = np.array([0, 0, 0.01])  # ほぼ0のベクトル
-        # if hasattr(self.scene, 'arrow_omega') and not self.scene.arrow_omega.isEmpty():
-        #     try:
-        #         self.scene.arrow_omega.removeNode()
-        #     except Exception:
-        #         pass
-        # self.scene.arrow_omega = vector_arrow(start=(0, 0, 0), vector=disp_omega, 
-        #             color=(1, 1, 0, 1), name="dispomega")
-        # self.scene.arrow_omega.reparentTo(render) # 慣性座標系に合わせて回転するので、矢印もrenderの子ノードとして追加
 
 
-        # 磁気モーメントベクトル描画  機体座標系で座標を指定
-        disp_toruca_y = 0.4 * self.toruca_y #描画用の角速度データ
-        toruca_y_mag = np.linalg.norm(disp_toruca_y)
-        if toruca_y_mag < 1e-8:
-            disp_toruca_y = np.array([0, 0, 0.01])  # ほぼ0のベクトル
-        if hasattr(self.scene, 'arrow_toruca_y') and not self.scene.arrow_toruca_y.isEmpty():
-            try:
-                self.scene.arrow_toruca_y.removeNode()
-            except Exception:
-                pass
-        self.scene.arrow_toruca_y = vector_arrow(start=(0.1, -0.05, 0), vector=disp_toruca_y, 
-                    color=(1, 0, 1, 1), name="disptoruca_y")
-        self.scene.arrow_toruca_y.reparentTo(self.scene.cube) # 慣性座標系に合わせて回転するのでcubeの子ノードとして追加
 
 
 
