@@ -256,6 +256,8 @@ class CubeApp(ShowBase):
         tz=0.0    # z軸周りのトルク
         if t < 3:
             self.torque = np.array([tx, ty, tz])
+        elif t < 7:
+            self.torque = np.array([-tx, -ty, -tz])
         else:
             self.torque = np.array([0.0, 0.0, 0.0])
         self.omegadot = self.J_inv @ (self.torque - np.cross(self.omega, self.J @ self.omega))
@@ -268,6 +270,12 @@ class CubeApp(ShowBase):
         ])
         Rdot = self.R @ omega_skew
         self.R += Rdot * dt
+
+        # SVDでRを直交行列に射影し、回転行列の性質を保つ
+        u, _, vh = np.linalg.svd(self.R)
+        correction = np.eye(3)
+        correction[-1, -1] = np.linalg.det(u @ vh)
+        self.R = u @ correction @ vh
 
 
         # 角速度ベクトル描画  機体座標系の角速度を慣性座標系に変換して描画するため、Rをかける
