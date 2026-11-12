@@ -17,6 +17,6 @@
     - ### https://github.com/mulab-eng/Benibana-Sat-Game <BR>
         ゲームのソースコードは上記のGitHubにあります．
 - ## 3年生エンジニアリング創成
-- ### <a href="./3年生エンジニアリング創成/3年生エンジニアリング創成.md" target="_blank" rel="noopener noreferrer">人工衛星サンプルプログラム</a>
+    - ### <a href="./3年生エンジニアリング創成/3年生エンジニアリング創成.md">エンジニアリング創成</a>
 
 
